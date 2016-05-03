@@ -1,7 +1,5 @@
-Index: openssl-1.0.2g/Configure
-===================================================================
---- openssl-1.0.2g.orig/Configure
-+++ openssl-1.0.2g/Configure
+--- openssl.orig/Configure
++++ openssl/Configure
 @@ -131,6 +131,10 @@ my $clang_devteam_warn = "-Wno-unused-pa
  # Warn that "make depend" should be run?
  my $warn_make_depend = 0;
