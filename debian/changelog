@@ -1,3 +1,10 @@
+openssl (1.0.2h-0) unstable; urgency=medium
+
+  * Imported Upstream version 1.0.2h
+  * Refresh patches on top of openssl 1.0.2h
+
+ -- Ondřej Surý <ondrej@debian.org>  Tue, 03 May 2016 16:48:31 +0200
+
 openssl (1.0.2g-2) unstable; urgency=medium
 
   * Use assembler of arm64 (Closes: #794326)
