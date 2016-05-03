@@ -10,8 +10,10 @@ Reviewed-by: Dr Stephen N Henson <shenson@drh-consultancy.co.uk>
 
 This is not meant as final patch.  
 
---- openssl.orig/crypto/x509/x509_vfy.c
-+++ openssl/crypto/x509/x509_vfy.c
+Index: openssl-1.0.2g/crypto/x509/x509_vfy.c
+===================================================================
+--- openssl-1.0.2g.orig/crypto/x509/x509_vfy.c
++++ openssl-1.0.2g/crypto/x509/x509_vfy.c
 @@ -119,6 +119,7 @@ static int check_trust(X509_STORE_CTX *c
  static int check_revocation(X509_STORE_CTX *ctx);
  static int check_cert(X509_STORE_CTX *ctx);

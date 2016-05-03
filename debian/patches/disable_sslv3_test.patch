@@ -8,8 +8,10 @@ expects a failure, but gets success.
 It should probably be changed to return something other than 0 for a skipped
 test.
 
---- openssl.orig/test/testssl
-+++ openssl/test/testssl
+Index: openssl-1.0.2d/test/testssl
+===================================================================
+--- openssl-1.0.2d.orig/test/testssl
++++ openssl-1.0.2d/test/testssl
 @@ -160,7 +160,7 @@ test_cipher() {
  }
  

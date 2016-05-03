@@ -1,9 +1,13 @@
-openssl (1.0.2h-0) unstable; urgency=medium
+openssl (1.0.2h-1) unstable; urgency=high
 
-  * Imported Upstream version 1.0.2h
-  * Refresh patches on top of openssl 1.0.2h
+  * New upstream version
+    - Fixes CVE-2016-2107
+    - Fixes CVE-2016-2105
+    - Fixes CVE-2016-2106
+    - Fixes CVE-2016-2109
+    - Fixes CVE-2016-2176
 
- -- Ondřej Surý <ondrej@debian.org>  Tue, 03 May 2016 16:48:31 +0200
+ -- Kurt Roeckx <kurt@roeckx.be>  Tue, 03 May 2016 18:31:22 +0200
 
 openssl (1.0.2g-2) unstable; urgency=medium
 
