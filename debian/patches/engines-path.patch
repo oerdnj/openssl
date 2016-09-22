@@ -1,8 +1,17 @@
-Index: openssl-1.0.2~beta3/Makefile.org
+Index: openssl-1.0.2i/Makefile.org
 ===================================================================
---- openssl-1.0.2~beta3.orig/Makefile.org
-+++ openssl-1.0.2~beta3/Makefile.org
-@@ -541,7 +541,7 @@ install: all install_docs install_sw
+--- openssl-1.0.2i.orig/Makefile.org
++++ openssl-1.0.2i/Makefile.org
+@@ -368,7 +368,7 @@ libcrypto.pc: Makefile
+ 	    echo 'exec_prefix=$${prefix}'; \
+ 	    echo 'libdir=$${exec_prefix}/$(LIBDIR)'; \
+ 	    echo 'includedir=$${prefix}/include'; \
+-	    echo 'enginesdir=$${libdir}/engines'; \
++	    echo 'enginesdir=$${libdir}/openssl-1.0.2/engines'; \
+ 	    echo ''; \
+ 	    echo 'Name: OpenSSL-libcrypto'; \
+ 	    echo 'Description: OpenSSL cryptography library'; \
+@@ -536,7 +536,7 @@ install: all install_docs install_sw
  install_sw:
  	@$(PERL) $(TOP)/util/mkdir-p.pl $(INSTALL_PREFIX)$(INSTALLTOP)/bin \
  		$(INSTALL_PREFIX)$(INSTALLTOP)/$(LIBDIR) \
@@ -11,10 +20,10 @@ Index: openssl-1.0.2~beta3/Makefile.org
  		$(INSTALL_PREFIX)$(INSTALLTOP)/$(LIBDIR)/pkgconfig \
  		$(INSTALL_PREFIX)$(INSTALLTOP)/include/openssl \
  		$(INSTALL_PREFIX)$(OPENSSLDIR)/misc \
-Index: openssl-1.0.2~beta3/engines/Makefile
+Index: openssl-1.0.2i/engines/Makefile
 ===================================================================
---- openssl-1.0.2~beta3.orig/engines/Makefile
-+++ openssl-1.0.2~beta3/engines/Makefile
+--- openssl-1.0.2i.orig/engines/Makefile
++++ openssl-1.0.2i/engines/Makefile
 @@ -107,13 +107,13 @@ install:
  	@[ -n "$(INSTALLTOP)" ] # should be set by top Makefile...
  	@if [ -n "$(SHARED_LIBS)" ]; then \
@@ -45,11 +54,11 @@ Index: openssl-1.0.2~beta3/engines/Makefile
  		done; \
  	fi
  	@target=install; $(RECURSIVE_MAKE)
-Index: openssl-1.0.2~beta3/Configure
+Index: openssl-1.0.2i/Configure
 ===================================================================
---- openssl-1.0.2~beta3.orig/Configure
-+++ openssl-1.0.2~beta3/Configure
-@@ -1893,7 +1893,7 @@ while (<IN>)
+--- openssl-1.0.2i.orig/Configure
++++ openssl-1.0.2i/Configure
+@@ -1969,7 +1969,7 @@ while (<IN>)
  		}
  	elsif	(/^#define\s+ENGINESDIR/)
  		{
@@ -58,10 +67,10 @@ Index: openssl-1.0.2~beta3/Configure
  		$foo =~ s/\\/\\\\/g;
  		print OUT "#define ENGINESDIR \"$foo\"\n";
  		}
-Index: openssl-1.0.2~beta3/engines/ccgost/Makefile
+Index: openssl-1.0.2i/engines/ccgost/Makefile
 ===================================================================
---- openssl-1.0.2~beta3.orig/engines/ccgost/Makefile
-+++ openssl-1.0.2~beta3/engines/ccgost/Makefile
+--- openssl-1.0.2i.orig/engines/ccgost/Makefile
++++ openssl-1.0.2i/engines/ccgost/Makefile
 @@ -47,7 +47,7 @@ install:
  		pfx=lib; \
  		if expr "$(PLATFORM)" : "Cygwin" >/dev/null; then \
