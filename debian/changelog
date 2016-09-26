@@ -1,9 +1,9 @@
-openssl (1.0.2j-0) unstable; urgency=medium
+openssl (1.0.2j-1) unstable; urgency=medium
 
-  * Imported Upstream version 1.0.2j
-    - https://www.openssl.org/news/secadv/20160926.txt
+  * New upstream release
+    - Fixes CVE-2016-7052
 
- -- Ondřej Surý <ondrej@debian.org>  Mon, 26 Sep 2016 13:21:25 +0200
+ -- Kurt Roeckx <kurt@roeckx.be>  Mon, 26 Sep 2016 18:17:39 +0200
 
 openssl (1.0.2i-1) unstable; urgency=high
 
