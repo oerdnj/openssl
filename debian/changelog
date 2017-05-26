@@ -1,3 +1,11 @@
+openssl (1.0.2l-0) unstable; urgency=medium
+
+  * Set correct gbp.conf
+  * Use https instead of ftp for uscan
+  * New upstream version 1.0.2l
+
+ -- Ondřej Surý <ondrej@debian.org>  Fri, 26 May 2017 08:59:27 +0200
+
 openssl (1.0.2k-1) unstable; urgency=medium
 
   * Backport for Ubuntu PPAs
