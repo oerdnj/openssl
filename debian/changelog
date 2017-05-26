@@ -1,3 +1,11 @@
+openssl (1.1.0f-2) unstable; urgency=medium
+
+  * Change the debhelper compatibility back to 9
+  * Set correct gbp.conf
+  * Disable running tests in the PPA
+
+ -- Ondřej Surý <ondrej@debian.org>  Fri, 26 May 2017 12:39:26 +0200
+
 openssl (1.1.0f-1) unstable; urgency=medium
 
   * New upstream version
