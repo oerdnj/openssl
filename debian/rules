@@ -12,6 +12,9 @@ SHELL=/bin/bash
 
 package=openssl
 
+# Disable running tests in the PPA
+DEB_BUILD_OPTIONS=nocheck
+
 # For generating the manpages
 export VERSION=$(shell dpkg-parsechangelog | grep '^Version:' | sed -e 's/^.*://' -e 's/-.*//')
 
