@@ -2,8 +2,8 @@
  config |    4 ++--
  1 file changed, 2 insertions(+), 2 deletions(-)
 
---- a/config
-+++ b/config
+--- openssl-1.0.orig/config
++++ openssl-1.0/config
 @@ -170,8 +170,8 @@ case "${SYSTEM}:${RELEASE}:${VERSION}:${
  	echo "${MACHINE}-whatever-linux1"; exit 0
  	;;

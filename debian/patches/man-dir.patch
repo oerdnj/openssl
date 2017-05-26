@@ -2,9 +2,9 @@
  Makefile.org |    2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
 
---- a/Makefile.org
-+++ b/Makefile.org
-@@ -157,7 +157,7 @@ TESTS = alltests
+--- openssl-1.0.orig/Makefile.org
++++ openssl-1.0/Makefile.org
+@@ -159,7 +159,7 @@ TESTS = alltests
  
  MAKEFILE= Makefile
  
