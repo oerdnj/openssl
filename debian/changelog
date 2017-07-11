@@ -1,10 +1,16 @@
+openssl (1.0.2l-1) unstable; urgency=medium
+
+  * Bump the version number to override bpo version
+
+ -- Ondřej Surý <ondrej@debian.org>  Tue, 11 Jul 2017 12:50:20 +0200
+
 openssl (1.0.2l-0) unstable; urgency=medium
 
   * Set correct gbp.conf
   * Use https instead of ftp for uscan
   * New upstream version 1.0.2l
 
- -- Ondřej Surý <ondrej@debian.org>  Fri, 26 May 2017 08:59:27 +0200
+ -- Ondřej Surý <ondrej@debian.org>  Tue, 11 Jul 2017 12:50:12 +0200
 
 openssl (1.0.2k-1) unstable; urgency=medium
 
