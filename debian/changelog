@@ -1,10 +1,55 @@
+openssl (1.1.0g-2) unstable; urgency=high
+
+  * Avoid problems with aes assembler on armhf using binutils 2.29
+
+ -- Kurt Roeckx <kurt@roeckx.be>  Sat, 04 Nov 2017 12:48:13 +0100
+
+openssl (1.1.0g-1) unstable; urgency=medium
+
+  * New upstream version
+    - Fixes CVE-2017-3735
+    - Fixes CVE-2017-3736
+  * Remove patches applied upstream
+  * Temporary enable TLS 1.0 and 1.1 again (#875423)
+  * Attempt to fix testsuite race condition
+  * update no-symbolic.patch to apply
+
+ -- Kurt Roeckx <kurt@roeckx.be>  Thu, 02 Nov 2017 15:22:48 +0100
+
+openssl (1.1.0f-5) unstable; urgency=medium
+
+  * Instead of completly disabling TLS 1.0 and 1.1, just set the minimum
+    version to TLS 1.2 by default. TLS 1.0 and 1.1 can be enabled again by
+    calling SSL_CTX_set_min_proto_version() or SSL_set_min_proto_version().
+
+ -- Kurt Roeckx <kurt@roeckx.be>  Tue, 08 Aug 2017 16:13:54 +0200
+
+openssl (1.1.0f-4) unstable; urgency=medium
+
+  [ Sebastian Andrzej Siewior ]
+  * Add support for arm64ilp32, patch by Wookey (Closes: #867240)
+
+  [ Kurt Roeckx ]
+  * Disable TLS 1.0 and 1.1, leaving 1.2 as the only supported SSL/TLS
+    version. This will likely break things, but the hope is that by
+    the release of Buster everything will speak at least TLS 1.2. This will be
+    reconsidered before the Buster release.
+  * Fix a race condition in the test suite (Closes: #869856)
+
+ -- Kurt Roeckx <kurt@roeckx.be>  Mon, 07 Aug 2017 01:08:45 +0200
+
+openssl (1.1.0f-3) unstable; urgency=medium
+
+  * Don't cleanup a thread-local key we didn't create it (Closes: #863707)
+
+ -- Kurt Roeckx <kurt@roeckx.be>  Mon, 05 Jun 2017 11:40:42 +0200
+
 openssl (1.1.0f-2) unstable; urgency=medium
 
-  * Change the debhelper compatibility back to 9
-  * Set correct gbp.conf
-  * Disable running tests in the PPA
+  * Make the udeb use a versioned depends (Closes: #864080)
+  * Conflict with libssl1.0-dev (Closes: #863367)
 
- -- Ondřej Surý <ondrej@debian.org>  Fri, 26 May 2017 12:39:26 +0200
+ -- Kurt Roeckx <kurt@roeckx.be>  Sun, 04 Jun 2017 12:07:38 +0200
 
 openssl (1.1.0f-1) unstable; urgency=medium
 
