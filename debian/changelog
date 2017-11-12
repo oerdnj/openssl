@@ -1,3 +1,11 @@
+openssl (1.1.0g-2.1) unstable; urgency=medium
+
+  * Change the debhelper compatibility back to 9
+  * Set correct gbp.conf
+  * Disable running tests in the PPA
+
+ -- Ondřej Surý <ondrej@debian.org>  Sun, 12 Nov 2017 08:03:23 +0000
+
 openssl (1.1.0g-2) unstable; urgency=high
 
   * Avoid problems with aes assembler on armhf using binutils 2.29
