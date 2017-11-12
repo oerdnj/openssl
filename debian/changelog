@@ -1,3 +1,9 @@
+openssl (1.0.2m-1) unstable; urgency=medium
+
+  * New upstream version 1.0.2m
+
+ -- Ondřej Surý <ondrej@debian.org>  Sun, 12 Nov 2017 07:56:20 +0000
+
 openssl (1.0.2l-1) unstable; urgency=medium
 
   * Bump the version number to override bpo version
